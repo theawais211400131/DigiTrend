@@ -1,0 +1,94 @@
+.clients{
+    
+    font-size: 48;
+    font-weight: bold;
+    text-align: center;
+}
+.text{
+    text-align: center;
+    color: #5D5A5A;
+    font-size: 18;
+}
+.container{
+    max-width:950px;
+    margin: auto;
+}
+.card{
+    margin-top: 30px;
+    box-shadow: 0px 0px 25px 10px white; 
+    border-radius: 20px;
+    cursor: pointer;
+    height:437px ;
+    width:350px ;
+
+
+}
+.card-img-top{
+    border-radius: 20px;
+}
+.card:hover{
+    transform: translateY(-5px);
+    border:2px solid #659365; 
+    box-shadow:3px 3px 3px 3px#659365 ; 
+}
+
+.card-title{
+ text-align: center;
+}
+.card-text{
+    text-align: center;
+
+}
+
+.explore-btn {
+    background: linear-gradient(135deg, #B9F2A1 0%, #8BC34A 100%);
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(185, 242, 161, 0.3);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.explore-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.explore-btn:hover {
+    background: linear-gradient(135deg, #8BC34A 0%, #689F38 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(185, 242, 161, 0.4);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.explore-btn:hover::before {
+    left: 100%;
+}
+
+.explore-btn:active {
+    transform: translateY(-1px);
+}
+
+.explore-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.explore-btn:hover .explore-icon {
+    transform: translateX(3px);
+}
+
